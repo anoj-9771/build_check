@@ -14,7 +14,7 @@ answer = raw_input("What would you like to query? \n 1.WAYSTATION \n 2.XPe STAGI
 
 # to import "question" function from file "input_question.py" and use it to process answer
 codeword = question(answer)
-print "Collecting information for " + codeword
+print ("Collecting information for ") + codeword
 
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s:%(levelname)s:%(message)s')
@@ -42,12 +42,12 @@ for file in os.listdir("C:/Source/healthcheck/stores/"):
                 upgraded.append(file)
         text_file.close()
 
-print "The list of upgraded stores is below :"
+print ("The list of upgraded stores is below :")
 for store in upgraded:
-    print store[0:7]
+    print (store[0:7])
 
-print "The total count of upgraded sites :"
-print len(upgraded)
+print ("The total count of upgraded sites :")
+print (len(upgraded))
 ###########################################################################
 
 ###########################################################################
@@ -61,13 +61,13 @@ for file in os.listdir("C:/Source/healthcheck/stores/"):
                 pending.append(file)
         text_file.close()
 
-print "The list of pending sites is below :"
+print ("The list of pending sites is below :")
 
 for store in pending:
-    print store[0:7]
+    print (store[0:7])
 
-print "The total count of pending sites :"
-print len(pending)
+print ("The total count of pending sites :")
+print (len(pending))
 ###########################################################################
 
 ###########################################################################
@@ -95,6 +95,6 @@ make_pie(answer, upgraded, pending)
 
 ###########################################################################
 #Debug
-# print codeword
+# print (codeword)
 
 ###########################################################################
