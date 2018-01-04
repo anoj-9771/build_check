@@ -10,11 +10,11 @@ upgraded = []
 failed = []
 final = []
 # codeword = "WAYSTATION"
-answer = raw_input("What would you like to query? \n 1.WAYSTATION \n 2.XPe STAGING \n 3.PRODUCTION \n")
+answer = input("What would you like to query? \n 1.WAYSTATION \n 2.XPe STAGING \n 3.PRODUCTION \n")
 
 # to import "question" function from file "input_question.py" and use it to process answer
 codeword = question(answer)
-print ("Collecting information for ") + codeword
+print  ("Collecting information for " + codeword)
 
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s:%(levelname)s:%(message)s')
@@ -95,6 +95,6 @@ make_pie(answer, upgraded, pending)
 
 ###########################################################################
 #Debug
-# print (codeword)
+# print codeword
 
 ###########################################################################
